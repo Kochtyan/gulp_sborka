@@ -1,0 +1,101 @@
+.popupp {
+    width: 100%;
+    max-width: $mobile;
+    height: 100vh;
+    max-height: -webkit-min-content;
+    max-height: -moz-min-content;
+    max-height: min-content;
+    overflow-y: auto;
+    &__overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.7);
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    &__overlay_show {
+        pointer-events: all;
+        opacity: 1;
+        visibility: visible;
+    }
+    &__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 35px;
+        height: 35px;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0;
+    }
+    &__close::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+        -ms-transform: translate(-50%, -50%) rotate(-45deg);
+        transform: translate(-50%, -50%) rotate(-45deg);
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        width: 50px;
+        height: 1px;
+        background-color: black;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+    &__close::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+        -ms-transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-50%, -50%) rotate(45deg);
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        width: 50px;
+        height: 1px;
+        background-color: black;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+}
+.mobile-menu {
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    &__close {}
+    &__logo-wrapper {}
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__text {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
+

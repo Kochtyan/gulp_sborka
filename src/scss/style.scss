@@ -1,0 +1,32 @@
+@use 'sass:math';
+
+@import 'config/fonts';
+
+@import 'config/vars';
+
+@import 'config/functions';
+@import 'config/mixins';
+@import 'config/patternSelectors';
+
+@import 'config/reset';
+
+/**
+* Библиотеки
+* раскомментировать для использования
+*/
+// @import 'libs/aos';
+// @import 'libs/swiper';
+
+@import 'config/scrollbar';
+
+@import 'config/base';
+
+@import 'config/common';
+
+@import 'components/header';
+@import 'components/popup';
+@import 'components/checkbox';
+@import 'components/tabs';
+@import 'components/accordion';
+@import 'components/footer';
+@import 'components/burger';

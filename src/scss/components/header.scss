@@ -1,0 +1,68 @@
+.header {
+  padding: 20px 0;
+  width: 100%;
+  z-index: 2;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__menu {}
+}
+.container {
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {}
+  &__nav {}
+  &__list {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+  }
+  &__item {}
+  &__link {
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+
+
+.menu {
+  &__burger {
+      display: none;
+  }
+}
+
+@include media($tablet) {
+  .menu {
+    justify-content: space-between;
+      &__burger {
+          display: flex;
+      }
+      .burger {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background-color: transparent;
+        &__line {
+        width: 30px;
+        height: 2px;
+        background-color: black;
+        }
+      }
+      &__nav {
+        display: none;
+      }
+  } 
+}
+

@@ -1,0 +1,24 @@
+@import 'keyframes';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px !important;
+  line-height: 24px;
+  color: black !important;
+}
+
+.page {
+  &__container {
+    padding: 0 10px;
+  }
+}
+
+
+
+
